@@ -1,26 +1,22 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/*
+ * Farben, Schriften und Bausteine kommen aus ../theme/jobpilot.css (Kopie aus allen
+ * jobpilot-Apps). Hier werden sie nur als Tailwind-Tokens verfügbar gemacht, z. B. `bg-accent`,
+ * `text-text-secondary`, `font-serif`.
+ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-text: var(--jp-text);
+  --color-text-secondary: var(--jp-text-secondary);
+  --color-background: var(--jp-background);
+  --color-background-element: var(--jp-background-element);
+  --color-background-selected: var(--jp-background-selected);
+  --color-border: var(--jp-border);
+  --color-accent: var(--jp-accent);
+  --color-on-accent: var(--jp-on-accent);
+  --color-accent-text: var(--jp-accent-text);
+  --color-accent-soft: var(--jp-accent-soft);
+  --color-danger: var(--jp-danger);
+  --font-sans: var(--jp-font-sans);
+  --font-serif: var(--jp-font-serif);
 }
